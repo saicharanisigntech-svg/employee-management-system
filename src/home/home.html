@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Employee Management System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Employee Management System</h1>
+        <span>Welcome, Admin</span>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../home/home.html" class="active">Dashboard</a></li>
+            <li><a href="../employees/employees.html">Employees</a></li>
+            <li><a href="../departments/departments.html">Departments</a></li>
+            <li><a href="../attendance/attendance.html">Attendance</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dashboard Stats Grid -->
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <h3>Total Employees</h3>
+                <div class="value">250</div>
+            </div>
+            <div class="stat-card">
+                <h3>Departments</h3>
+                <div class="value">8</div>
+            </div>
+            <div class="stat-card">
+                <h3>Today's Attendance</h3>
+                <div class="value">235 Present</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Requests</h3>
+                <div class="value">12</div>
+            </div>
+        </div>
+
+        <div class="layout-content">
+            <!-- Recent Activity -->
+            <div class="section-box">
+                <h2>System Activity Overview</h2>
+                <p>Welcome to the Employee Management Dashboard. All systems are running smoothly.</p>
+            </div>
+
+            <!-- Quick Actions Sidebar -->
+            <div class="section-box">
+                <h2>Quick Actions</h2>
+                <ul class="action-list">
+                    <li><a href="../employees/employees.html">+ Add New Employee</a></li>
+                    <li><a href="../attendance/attendance.html">View Attendance Report</a></li>
+                    <li><a href="../departments/departments.html">Manage Departments</a></li>
+                    <li><a href="../contact/contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Employee Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

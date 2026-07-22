@@ -1,0 +1,24 @@
+@import url('../components/common.css');
+
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.dept-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.dept-card h3 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.dept-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

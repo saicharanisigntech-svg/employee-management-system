@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees | Employee Management System</title>
+    <link rel="stylesheet" href="employees.css">
+</head>
+<body>
+
+    <header>
+        <h1>Employee Management System</h1>
+        <span>Employees Directory</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../home/home.html">Dashboard</a></li>
+            <li><a href="../employees/employees.html" class="active">Employees</a></li>
+            <li><a href="../departments/departments.html">Departments</a></li>
+            <li><a href="../attendance/attendance.html">Attendance</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="table-container">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EMP-001</td>
+                        <td>Jane Doe</td>
+                        <td>Engineering</td>
+                        <td>Software Engineer</td>
+                        <td><span class="badge badge-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>EMP-002</td>
+                        <td>John Smith</td>
+                        <td>Human Resources</td>
+                        <td>HR Specialist</td>
+                        <td><span class="badge badge-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>EMP-003</td>
+                        <td>Alice Johnson</td>
+                        <td>Marketing</td>
+                        <td>Lead Strategist</td>
+                        <td><span class="badge badge-active">Active</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Employee Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="employees.js"></script>
+</body>
+</html>

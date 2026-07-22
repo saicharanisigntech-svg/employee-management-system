@@ -1,0 +1,8 @@
+@import url('../components/common.css');
+
+.attendance-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}

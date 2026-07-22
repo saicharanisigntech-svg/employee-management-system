@@ -1,0 +1,18 @@
+@import url('../components/common.css');
+
+.about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 2rem;
+}
+
+.about-card h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
