@@ -20,7 +20,9 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
     <header className="main-header">
       {/* Left Brand Area (Logo only) */}
       <div className="header-brand">
-        <img src={companyLogo} alt="iSignTech Logo" className="header-company-logo" />
+        <img src={companyLogo} alt="Company Logo" className="header-company-logo" />
+        <span className="header-divider">|</span>
+        <h1 className="header-title">Employee Dashboard</h1>
       </div>
 
       {/* Right Navigation Menu */}

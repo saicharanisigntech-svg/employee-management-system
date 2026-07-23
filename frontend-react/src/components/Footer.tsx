@@ -7,7 +7,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="main-footer">
-      <p>&copy; 2026 Employee Management System. All Rights Reserved.</p>
+      <p>&copy; 2026 Employee Dashboard. All Rights Reserved.</p>
     </footer>
   );
 };

@@ -7,9 +7,9 @@ import React from 'react';
 const AboutView: React.FC = () => {
   return (
     <div className="about-card">
-      <h2>About Employee Management System</h2>
+      <h2>About Employee Dashboard</h2>
       <p style={{ marginBottom: '1rem' }}>
-        The Employee Management System is a modular workforce administration platform designed to manage staff records, track daily attendance, oversee departments, and deliver organizational analytics.
+        Employee Dashboard is a modular workforce administration platform designed for employee records and status management, tracking daily attendance, overseeing departments, and delivering organizational analytics.
       </p>
     </div>
   );

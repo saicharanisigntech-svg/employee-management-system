@@ -1,16 +1,21 @@
 import React from 'react';
-import type { StatCardItem } from '../types';
+import type { StatCardsProps, StatCardItem } from '../types';
 
 /**
  * StatCards Component
- * Displays summary statistic cards on the Dashboard.
+ * Displays summary statistic cards on the Dashboard reflecting live state.
  */
-const StatCards: React.FC = () => {
+const StatCards: React.FC<StatCardsProps> = ({
+  totalEmployees = 12,
+  totalDepartments = 2,
+  presentToday = totalEmployees,
+  pendingRequests = 0,
+}) => {
   const stats: StatCardItem[] = [
-    { title: 'Total Employees', value: '250' },
-    { title: 'Departments', value: '8' },
-    { title: "Today's Attendance", value: '235 Present' },
-    { title: 'Pending Requests', value: '12' },
+    { title: 'Total Employees', value: totalEmployees.toString() },
+    { title: 'Active Departments', value: totalDepartments.toString() },
+    { title: "Today's Attendance", value: `${presentToday} Present` },
+    { title: 'Pending Requests', value: pendingRequests.toString() },
   ];
 
   return (
