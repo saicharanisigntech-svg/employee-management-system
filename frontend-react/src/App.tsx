@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-import HomeDashboardView from './views/HomeDashboardView.jsx';
-import EmployeesView from './views/EmployeesView.jsx';
-import DepartmentsView from './views/DepartmentsView.jsx';
-import AttendanceView from './views/AttendanceView.jsx';
-import AboutView from './views/AboutView.jsx';
-import ContactView from './views/ContactView.jsx';
+import HomeDashboardView from './views/HomeDashboardView';
+import EmployeesView from './views/EmployeesView';
+import DepartmentsView from './views/DepartmentsView';
+import AttendanceView from './views/AttendanceView';
+import AboutView from './views/AboutView';
+import ContactView from './views/ContactView';
+import type { NavigationTab } from './types';
 
 import './App.css';
 
@@ -15,8 +16,8 @@ import './App.css';
  * Main App Component
  * Manages activeTab state and renders top integrated Header, current view, and Footer.
  */
-function App() {
-  const [activeTab, setActiveTab] = useState('dashboard');
+const App: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<NavigationTab>('dashboard');
 
   // Render the current view based on activeTab
   const renderCurrentView = () => {
@@ -52,6 +53,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

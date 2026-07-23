@@ -1,12 +1,13 @@
 import React from 'react';
 import companyLogo from '../assets/logo.png';
+import type { HeaderProps, NavigationTab } from '../types';
 
 /**
  * Header Component
  * Displays the iSignTech company logo on the left and header navigation menu on the right.
  */
-function Header({ activeTab, setActiveTab }) {
-  const navItems = [
+const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
+  const navItems: { id: NavigationTab; label: string }[] = [
     { id: 'dashboard', label: 'Dashboard' },
     { id: 'employees', label: 'Employees' },
     { id: 'departments', label: 'Departments' },
@@ -43,6 +44,6 @@ function Header({ activeTab, setActiveTab }) {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

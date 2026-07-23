@@ -1,11 +1,12 @@
 import React from 'react';
+import type { NavbarProps, NavigationTab } from '../types';
 
 /**
  * Navbar Component
  * Handles navigation between different sections using React state.
  */
-function Navbar({ activeTab, setActiveTab }) {
-  const navItems = [
+const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
+  const navItems: { id: NavigationTab; label: string }[] = [
     { id: 'dashboard', label: 'Dashboard' },
     { id: 'employees', label: 'Employees' },
     { id: 'departments', label: 'Departments' },
@@ -34,6 +35,6 @@ function Navbar({ activeTab, setActiveTab }) {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;

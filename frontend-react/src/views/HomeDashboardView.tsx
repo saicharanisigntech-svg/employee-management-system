@@ -1,18 +1,21 @@
 import React from 'react';
-import StatCards from '../components/StatCards.jsx';
-import QuickActions from '../components/QuickActions.jsx';
+import StatCards from '../components/StatCards';
+import QuickActions from '../components/QuickActions';
+import type { HomeDashboardViewProps } from '../types';
 
 /**
  * HomeDashboardView Component
  * Renders the main Dashboard landing layout with Employee Management System header on the left.
  */
-function HomeDashboardView({ setActiveTab }) {
+const HomeDashboardView: React.FC<HomeDashboardViewProps> = ({ setActiveTab }) => {
   return (
     <div className="home-dashboard-view">
       {/* Dashboard Top Title Section */}
       <div className="dashboard-top-header">
         <h1 className="dashboard-title">Employee Management System</h1>
-        <p className="dashboard-subtitle">Welcome to the Admin Dashboard. Manage workforce records, departments, and attendance.</p>
+        <p className="dashboard-subtitle">
+          Welcome to the Admin Dashboard. Manage workforce records, departments, and attendance.
+        </p>
       </div>
 
       {/* Top Stat Cards */}
@@ -33,6 +36,6 @@ function HomeDashboardView({ setActiveTab }) {
       </div>
     </div>
   );
-}
+};
 
 export default HomeDashboardView;

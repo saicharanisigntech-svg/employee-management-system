@@ -1,15 +1,14 @@
 import React from 'react';
+import type { Department } from '../types';
 
 /**
  * DepartmentsView Component
  * Renders department cards grid.
  */
-function DepartmentsView() {
-  const departments = [
-    { title: 'Engineering', members: '85 Employees', lead: 'Tech Operations' },
-    { title: 'Human Resources', members: '15 Employees', lead: 'People Relations' },
-    { title: 'Marketing', members: '30 Employees', lead: 'Growth & Brand' },
-    { title: 'Finance', members: '20 Employees', lead: 'Financial Planning' },
+const DepartmentsView: React.FC = () => {
+  const departments: Department[] = [
+    { title: 'Engineering', members: '11 Employees', lead: 'Tech Operations' },
+    { title: 'Marketing', members: '1 Employees', lead: 'Growth & Brand' },
   ];
 
   return (
@@ -26,6 +25,6 @@ function DepartmentsView() {
       </div>
     </div>
   );
-}
+};
 
 export default DepartmentsView;

@@ -1,11 +1,12 @@
 import React from 'react';
+import type { StatCardItem } from '../types';
 
 /**
  * StatCards Component
  * Displays summary statistic cards on the Dashboard.
  */
-function StatCards() {
-  const stats = [
+const StatCards: React.FC = () => {
+  const stats: StatCardItem[] = [
     { title: 'Total Employees', value: '250' },
     { title: 'Departments', value: '8' },
     { title: "Today's Attendance", value: '235 Present' },
@@ -22,6 +23,6 @@ function StatCards() {
       ))}
     </div>
   );
-}
+};
 
 export default StatCards;

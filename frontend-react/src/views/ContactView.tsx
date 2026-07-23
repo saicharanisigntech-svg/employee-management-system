@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, type ChangeEvent, type FormEvent } from 'react';
+import type { ContactFormData } from '../types';
 
 /**
  * ContactView Component
  * Renders contact support form with controlled React inputs.
  */
-function ContactView() {
-  const [formData, setFormData] = useState({
+const ContactView: React.FC = () => {
+  const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
     message: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
@@ -63,7 +64,7 @@ function ContactView() {
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
-            rows="4"
+            rows={4}
             required
             placeholder="Enter message"
             value={formData.message}
@@ -75,6 +76,6 @@ function ContactView() {
       </form>
     </div>
   );
-}
+};
 
 export default ContactView;

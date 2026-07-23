@@ -1,19 +1,20 @@
 import React from 'react';
+import type { DashboardStat, Employee } from './types';
 
 /**
  * EmployeeDashboard Component
  * Reusable dashboard component displaying system overview, statistics, and quick metrics.
  */
-const EmployeeDashboard = () => {
+const EmployeeDashboard: React.FC = () => {
   // Sample initial data for dashboard metrics
-  const stats = [
-    { label: 'Total Employees', value: '148', change: '+12% this month', icon: '👥', color: 'blue' },
-    { label: 'Active Departments', value: '8', change: 'All Operational', icon: '🏢', color: 'purple' },
-    { label: 'Present Today', value: '136', change: '92% Attendance', icon: '✅', color: 'green' },
-    { label: 'Pending Requests', value: '5', change: 'Requires Action', icon: '⏳', color: 'amber' },
+  const stats: DashboardStat[] = [
+    { label: 'Total Employees', value: '12', change: '+12% this month', icon: '👥', color: 'blue' },
+    { label: 'Active Departments', value: '2', change: 'All Operational', icon: '🏢', color: 'purple' },
+    { label: 'Present Today', value: '1', change: '92% Attendance', icon: '✅', color: 'green' },
+    { label: 'Pending Requests', value: '0', change: 'Requires Action', icon: '⏳', color: 'amber' },
   ];
 
-  const recentEmployees = [
+  const recentEmployees: Employee[] = [
     { id: 'EMP-101', name: 'Sarah Jenkins', role: 'Senior Frontend Developer', department: 'Engineering', status: 'Active' },
     { id: 'EMP-102', name: 'Alex Rivera', role: 'Product Designer', department: 'Design', status: 'Active' },
     { id: 'EMP-103', name: 'Michael Chen', role: 'Backend Lead', department: 'Engineering', status: 'On Leave' },
